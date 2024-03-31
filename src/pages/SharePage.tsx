@@ -1,6 +1,6 @@
 const SharePage = () => {
   const handleShareOnLinkedin = () => {
-    const certificateUrl = encodeURIComponent('http://localhost:5173/sharedPage'); // URL to your certificate page
+    const certificateUrl = encodeURIComponent('https://react-vite-seo.netlify.app/sharedPage'); // URL to your certificate page
     const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${certificateUrl}`;
     window.open(shareUrl, '_blank');
   };
