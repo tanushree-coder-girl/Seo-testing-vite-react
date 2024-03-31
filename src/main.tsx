@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: 'sharedPage',
+    path: '/sharedPage',
     element: <SharePage />
   }
 ]);
