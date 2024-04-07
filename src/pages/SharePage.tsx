@@ -13,7 +13,7 @@ const SharePage = () => {
 
   return (
     <>
-      <Helmet>
+      <Helmet prioritizeSeoTags>
         <title>Shared page!</title>
         <meta
           name="description"

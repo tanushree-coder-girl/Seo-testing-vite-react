@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <>
-    <Helmet>
+    <Helmet prioritizeSeoTags>
         <title>app page</title>
 
       <meta property="og:title" content="Your App page Title" />
