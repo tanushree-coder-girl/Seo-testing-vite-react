@@ -6,14 +6,16 @@ function App() {
   return (
     <>
     <Helmet>
-      <meta property="og:title" content="Your Page Title" />
+        <title>app page</title>
+
+      <meta property="og:title" content="Your App page Title" />
       <meta
         property="og:description"
-        content="Description of your page content"
+        content="your app page content"
       />
       <meta
         property="og:image"
-        content="https://fastly.picsum.photos/id/137/200/300.jpg?hmac=5vAnK2h9wYgvt2769Z9D1XYb8ory9_zB0bqDgVjgAnk"
+        content="https://fastly.picsum.photos/id/862/200/200.jpg?hmac=rRVo_arAcvYpDsyKWlGq_MPlxjOpW2jIe42jZ8REjZ4"
       />
       <meta property="og:url" content="https://react-vite-seo.netlify.app/" />
       <meta property="og:type" content="website" />

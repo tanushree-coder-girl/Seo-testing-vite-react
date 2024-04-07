@@ -9,6 +9,8 @@ const SharePage = () => {
     window.open(shareUrl, "_blank");
   };
 
+ 
+
   return (
     <>
       <Helmet>
