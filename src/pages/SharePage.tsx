@@ -1,15 +1,19 @@
 import { Helmet } from "react-helmet-async";
-
+import {
+  LinkedinShareButton,
+} from "react-share";
 const SharePage = () => {
-  const handleShareOnLinkedin = () => {
-    const certificateUrl = "https://react-vite-seo.netlify.app/#/sharedPage"; // URL to your certificate page
+      const certificateUrl = "https://react-vite-seo.netlify.app/#/sharedPage"; // URL to your certificate page
 
-     const shareUrl = `https://www.linkedin.com/feed/?shareActive?url=${encodeURIComponent(
-      certificateUrl
-    )}&source=LinkedIn&mini=true&text="this is my title"&summary="summmarttty"`;
+  // const handleShareOnLinkedin = () => {
+  //   const certificateUrl = "https://react-vite-seo.netlify.app/#/sharedPage"; // URL to your certificate page
 
-    window.open(shareUrl, "_blank");
-  };
+  //    const shareUrl = `https://www.linkedin.com/feed/?shareActive?url=${encodeURIComponent(
+  //     certificateUrl
+  //   )}&source=LinkedIn&mini=true&text="this is my title"&summary="summmarttty"`;
+
+  //   window.open(shareUrl, "_blank");
+  // };
 
   return (
     <>
@@ -34,9 +38,18 @@ const SharePage = () => {
         ></meta>
       </Helmet>
       <div>
-        <button onClick={handleShareOnLinkedin}>
+        {/* <button onClick={handleShareOnLinkedin}>
           Share Certificate on LinkedIn
-        </button>
+        </button> */}
+     
+        <LinkedinShareButton
+        url={certificateUrl}
+        title={"title"}
+        summary={"summary"}
+        image={"https://pinnacle.works/wp-content/uploads/2022/06/dummy-image-300x298.jpg"}
+      >
+        Share on LinkedIn
+      </LinkedinShareButton>
       </div>
     </>
   );
