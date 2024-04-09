@@ -3,9 +3,11 @@ import { Helmet } from "react-helmet-async";
 const SharePage = () => {
   const handleShareOnLinkedin = () => {
     const certificateUrl = "https://react-vite-seo.netlify.app/#/sharedPage"; // URL to your certificate page
-    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+
+     const shareUrl = `https://www.linkedin.com/feed/?shareActive?url=${encodeURIComponent(
       certificateUrl
-    )}&source=LinkedIn&mini=true&title="this is my title"&summary="summmarttty"`;
+    )}&source=LinkedIn&mini=true&text="this is my title"&summary="summmarttty"`;
+
     window.open(shareUrl, "_blank");
   };
 
