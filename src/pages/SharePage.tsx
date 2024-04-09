@@ -46,7 +46,6 @@ const SharePage = () => {
         url={certificateUrl}
         title={"title"}
         summary={"summary"}
-        image={"https://pinnacle.works/wp-content/uploads/2022/06/dummy-image-300x298.jpg"}
       >
         Share on LinkedIn
       </LinkedinShareButton>
