@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     webUpdateNotice({
       locale: "en_US",
+      hiddenDismissButton: true,
       notificationProps: {
         title: 'Version Update',
         description: 'A new version of Builder University is available',
