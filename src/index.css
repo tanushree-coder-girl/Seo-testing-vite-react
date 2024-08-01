@@ -14,3 +14,12 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.plugin-web-update-notice-btn {
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    background-color: #6f42c1;
+    font-weight: 500;
+}
