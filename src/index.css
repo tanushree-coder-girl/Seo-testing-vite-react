@@ -24,3 +24,8 @@
     background-color: #6f42c1;
     font-weight: 500;
 }
+
+.plugin-web-update-notice-btn:hover {
+    background-color: #6f42c1;
+    opacity: 0.1;
+}
