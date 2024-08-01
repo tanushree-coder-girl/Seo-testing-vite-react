@@ -4,6 +4,7 @@ const App = () => {
     <h1>Hello wlrld</h1>
       <button style={{cursor:'pointer'}} onClick={()=>console.log('hello world')}>click me</button>
 
+
 {/* <div className="plugin-web-update-notice-anchor">
   <div className="plugin-web-update-notice">
     <div className="plugin-web-update-notice-content" data-cy="notification-content">
