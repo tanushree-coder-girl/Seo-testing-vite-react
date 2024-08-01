@@ -1,6 +1,5 @@
 import React, {Suspense} from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import './index.css'
 import {
   createHashRouter,
@@ -8,13 +7,15 @@ import {
 } from "react-router-dom";
 import SharePage from './pages/SharePage.tsx';
 import { HelmetProvider } from 'react-helmet-async';
+import VideoPlayer from './pages/VideoPlayer.tsx';
+import Neww from './pages/Newww.tsx';
 
 const router = createHashRouter([
   {
     path: "/",
     element: (
       <Suspense fallback={<></>}>
-          <App />
+          <Neww />
       </Suspense>
     ),
   },
@@ -23,6 +24,14 @@ const router = createHashRouter([
     element: (
       <Suspense fallback={<></>}>
           <SharePage />
+      </Suspense>
+    ),
+  },
+     {
+    path: "/video",
+    element: (
+      <Suspense fallback={<></>}>
+          <VideoPlayer />
       </Suspense>
     ),
   },

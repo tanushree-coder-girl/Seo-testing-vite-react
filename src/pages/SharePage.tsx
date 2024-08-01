@@ -1,19 +1,16 @@
 import { Helmet } from "react-helmet-async";
-import {
-  LinkedinShareButton,
-} from "react-share";
+
 const SharePage = () => {
-      const certificateUrl = "https://react-vite-seo.netlify.app/#/sharedPage"; // URL to your certificate page
 
-  // const handleShareOnLinkedin = () => {
-  //   const certificateUrl = "https://react-vite-seo.netlify.app/#/sharedPage"; // URL to your certificate page
+  const handleShareOnLinkedin = () => {
+    const certificateUrl = "https://media.university.builder.ai/wp-content/uploads/2022/11/18165513/Screenshot-2022-11-18-at-16.54.28.png"; // URL to your certificate page
 
-  //    const shareUrl = `https://www.linkedin.com/feed/?shareActive?url=${encodeURIComponent(
-  //     certificateUrl
-  //   )}&source=LinkedIn&mini=true&text="this is my title"&summary="summmarttty"`;
+     const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+      certificateUrl
+    )}&source=LinkedIn&mini=true&text="this is my title"&summary="summmarttty"`;
 
-  //   window.open(shareUrl, "_blank");
-  // };
+    window.open(shareUrl, "_blank");
+  };
 
   return (
     <>
@@ -38,17 +35,10 @@ const SharePage = () => {
         ></meta>
       </Helmet>
       <div>
-        {/* <button onClick={handleShareOnLinkedin}>
+        <button onClick={handleShareOnLinkedin}>
           Share Certificate on LinkedIn
-        </button> */}
-     
-        <LinkedinShareButton
-        url={certificateUrl}
-        title={"title"}
-        summary={"summary"}
-      >
-        Share on LinkedIn
-      </LinkedinShareButton>
+        </button>
+  
       </div>
     </>
   );
